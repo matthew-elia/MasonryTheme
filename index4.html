@@ -11,6 +11,7 @@
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="https://use.fontawesome.com/4faff527a9.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<style type="text/css">
 			body {
@@ -21,10 +22,13 @@
 				padding: 10px;
 				background: white;
 			}
-			img {
+			a {
 				padding:15px;
-				padding-bottom: 60px;
+				padding-bottom: 30px;
 				background: white;
+			}
+			span {
+				display: inline-flex;
 			}
 		</style>
 	</head>
@@ -241,59 +245,73 @@
 
 			$.getJSON("data/swrvela.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+1)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	swrvela_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+1)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+1)+'');
+		    		swrvela_Images.push(data.items[i].images.standard_resolution.url);
+	    		// console.log(swrvela_Images);
 			    }
-		    	console.log(swrvela_Images);
 			});
 			$.getJSON("data/rabequipment.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+21)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	rabequipment_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+21)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+21)+'');
+		    		rabequipment_Images.push(data.items[i].images.standard_resolution.url);
+	    		// console.log(rabequipment_Images);
 			    }
-		    	console.log(rabequipment_Images);
 			});
 			$.getJSON("data/fjallravenusa.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+41)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	swrvela_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+41)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+41)+'');
+		    		swrvela_Images.push(data.items[i].images.standard_resolution.url);
+	    		// console.log(swrvela_Images);
 			    }
-		    	console.log(swrvela_Images);
 			});
 			$.getJSON("data/topodesigns.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+61)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	topodesigns_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+61)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+61)+'');
+		    		topodesigns_Images.push(data.items[i].images.standard_resolution.url);
 			    }
-		    	console.log(topodesigns_Images);
+	    		// console.log(topodesigns_Images);
 			});
 			$.getJSON("data/penfieldusa.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+81)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	penfieldusa_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+81)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+81)+'');
+		    		penfieldusa_Images.push(data.items[i].images.standard_resolution.url);
 			    }
-		    	console.log(penfieldusa_Images);
+	    		// console.log(penfieldusa_Images);
 			});
 			$.getJSON("data/wmountaineering.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+101)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	wmountaineering_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+101)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+101)+'');
+		    		wmountaineering_Images.push(data.items[i].images.standard_resolution.url);
 			    }
-		    	console.log(wmountaineering_Images);
+	    		// console.log(wmountaineering_Images);
 			});
 			$.getJSON("data/bergansofnorway.json", function(data) {
 			    for (var i = 0; i < 20; i++) {
-			    	// console.log(data.items[i].images.standard_resolution.url);
-			    	$('.insta-'+(i+121)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'')
-			    	bergansofnorway_Images.push(data.items[i].images.standard_resolution.url);
+			    	console.log(data.items[i].likes.count);
+			    	console.log(data.items[i].comments);
+			    	$('.insta-'+(i+121)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
+			    	$('<span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'</p>&nbsp;&nbsp;&nbsp;<p><i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span>').insertAfter('.insta-'+(i+121)+'');
+		    		bergansofnorway_Images.push(data.items[i].images.standard_resolution.url);
 			    }
-		    	console.log(bergansofnorway_Images);
+	    		// console.log(bergansofnorway_Images);
 			});
 
 			// $(document).ready(function(){
