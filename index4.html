@@ -15,14 +15,14 @@
 		<script src="js/modernizr.custom.js"></script>
 		<style type="text/css">
 			body {
-				background: black;
+				background: white;
 			}
 			video {
 				margin-top:33px;
 				padding: 10px;
 				background: white;
 			}
-			a {
+			li,a {
 				padding:15px;
 				padding-bottom: 30px;
 				background: white;
@@ -34,6 +34,11 @@
 	</head>
 	<body>
 		<div class="container">
+			<div style="text-align:center;">
+				<video class="swrveVideo" height="600px" width="auto" autoplay loop muted>
+					<source src="videos/swrveVideo.mp4" type="video/mp4"> 
+				</video>
+			</div>
 			<ul class="grid effect-4" id="grid">
 
 				<!-- bergans of norway -->
@@ -52,7 +57,7 @@
 					<source src="videos/swrveVideo.mp4" type="video/mp4"> 
 				</video>
 			</div>
-			<ul class="grid effect-3" id="grid">
+			<ul class="grid effect-4" id="grid">
 				<li><a href="http://drbl.in/fHaa"><img class="insta-10" src="http://via.placeholder.com/350x350"></a></li>
 				<li><a href="http://drbl.in/fHaa"><img class="insta-11" src="http://via.placeholder.com/350x350"></a></li>
 				<li><a href="http://drbl.in/fHaa"><img class="insta-12" src="http://via.placeholder.com/350x350"></a></li>
@@ -84,7 +89,7 @@
 					<source src="videos/swrveVideo.mp4" type="video/mp4"> 
 				</video>
 			</div>
-			<ul class="grid effect-3" id="grid">
+			<ul class="grid effect-4" id="grid">
 				<li><a href="http://drbl.in/fHaa"><img class="insta-28" src="http://via.placeholder.com/350x350"></a></li>
 				<li><a href="http://drbl.in/fHaa"><img class="insta-29" src="http://via.placeholder.com/350x350"></a></li>
 				<li><a href="http://drbl.in/fHaa"><img class="insta-30" src="http://via.placeholder.com/350x350"></a></li>
@@ -116,7 +121,7 @@
 					<source src="videos/swrveVideo.mp4" type="video/mp4"> 
 				</video>
 			</div>
-			<ul class="grid effect-3" id="grid">
+			<ul class="grid effect-4" id="grid">
 				<li><a href="http://drbl.in/fHaa"><img class="insta-46" src="http://via.placeholder.com/350x350"></a></li>
 				<li><a href="http://drbl.in/fHaa"><img class="insta-47" src="http://via.placeholder.com/350x350"></a></li>
 				<li><a href="http://drbl.in/fHaa"><img class="insta-48" src="http://via.placeholder.com/350x350"></a></li>
@@ -314,9 +319,9 @@
 	    		// console.log(bergansofnorway_Images);
 			});
 
-			// $(document).ready(function(){
+			$(document).ready(function(){
 				$("html, body").animate({ scrollTop: $(document).height() }, 169000);
-			// });
+			});
 
 		});
 			// var instagramAccounts = new Array();
