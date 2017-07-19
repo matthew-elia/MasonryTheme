@@ -25,10 +25,10 @@ span {
 .username {
   color: royalblue;
 }
-img {
+/*img {
   max-width: 350px;
   max-height: 350px;
-}
+}*/
 .likesCount {
   color:black;
 }
