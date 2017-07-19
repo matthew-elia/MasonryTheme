@@ -31,9 +31,8 @@ img {
 }
 .likesCount {
   color:black;
-  margin: 0 !important;
 }
 .instaContentWrapper {
-  background: rgba(254,204,69,0.7);
+  background: rgba(255,255,255,0.7);
   padding:15px;
 }
