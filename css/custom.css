@@ -2,7 +2,7 @@ body {
   background: white;
 }
 li {
-  background: rgba(254,204,69,0.7);
+  /*background: rgba(254,204,69,0.7);*/
   padding:30px !important;
   text-align: center;
 }
@@ -23,9 +23,16 @@ span {
 }
 
 .username {
-  color: skyblue;
+  color: royalblue;
 }
 img {
   max-width: 350px;
   max-height: 350px;
+}
+.likesCount {
+  color:black;
+}
+.instaContentWrapper {
+  background: rgba(254,204,69,0.7);
+  padding:15px;
 }
