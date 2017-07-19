@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="css/bgVid.css">
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
         <script src="https://use.fontawesome.com/4faff527a9.js"></script>
-        <script src="js/modernizr.custom.js"></script>
+        <!-- <script src="js/modernizr.custom.js"></script> -->
     </head>
     <body>
         <div style="text-align:center;">
@@ -230,7 +230,7 @@
             $.getJSON("data/rabequipment.json", function(data) {
                 for (var i = 0; i < 20; i++) {
                     $('.insta-'+(i+21)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
-                    $('</br></br><span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+21)+'');
+                    $('</br></br><span><p class="likesCount"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+21)+'');
                     // rabequipment_Images.push(data.items[i].images.standard_resolution.url);
                 // console.log(rabequipment_Images);
                 }
@@ -238,7 +238,7 @@
             $.getJSON("data/fjallravenusa.json", function(data) {
                 for (var i = 0; i < 20; i++) {
                     $('.insta-'+(i+41)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
-                    $('</br></br><span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+41)+'');
+                    $('</br></br><span><p class="likesCount"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+41)+'');
                     // swrvela_Images.push(data.items[i].images.standard_resolution.url);
                 // console.log(swrvela_Images);
                 }
@@ -246,7 +246,7 @@
             $.getJSON("data/topodesigns.json", function(data) {
                 for (var i = 0; i < 20; i++) {
                     $('.insta-'+(i+61)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
-                    $('</br></br><span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+61)+'');
+                    $('</br></br><span><p class="likesCount"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+61)+'');
                     // topodesigns_Images.push(data.items[i].images.standard_resolution.url);
                 }
                 // console.log(topodesigns_Images);
@@ -254,7 +254,7 @@
             $.getJSON("data/penfieldusa.json", function(data) {
                 for (var i = 0; i < 20; i++) {
                     $('.insta-'+(i+81)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
-                    $('</br></br><span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+81)+'');
+                    $('</br></br><span><p class="likesCount"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+81)+'');
                     // penfieldusa_Images.push(data.items[i].images.standard_resolution.url);
                 }
                 // console.log(penfieldusa_Images);
@@ -262,7 +262,7 @@
             $.getJSON("data/wmountaineering.json", function(data) {
                 for (var i = 0; i < 20; i++) {
                     $('.insta-'+(i+101)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
-                    $('</br></br><span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+101)+'');
+                    $('</br></br><span><p class="likesCount"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+101)+'');
                     // wmountaineering_Images.push(data.items[i].images.standard_resolution.url);
                 }
                 // console.log(wmountaineering_Images);
@@ -270,7 +270,7 @@
             $.getJSON("data/bergansofnorway.json", function(data) {
                 for (var i = 0; i < 20; i++) {
                     $('.insta-'+(i+121)+'').attr('src', ''+data.items[i].images.standard_resolution.url+'');
-                    $('</br></br><span><p><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+121)+'');
+                    $('</br></br><span><p class="likesCount"><i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> '+data.items[i].likes.count+'&nbsp;&nbsp;&nbsp;<i class="fa fa-comment-o" aria-hidden="true" style="color:black;"></i> '+data.items[i].comments.count+'</p></span></br><span><p class="caption"><b class="username">'+data.items[i].user.username+'</b> '+data.items[i].caption.text+'</p></span>').insertAfter('.insta-'+(i+121)+'');
                     // bergansofnorway_Images.push(data.items[i].images.standard_resolution.url);
                 }
                 // console.log(bergansofnorway_Images);

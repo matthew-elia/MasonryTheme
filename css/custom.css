@@ -18,8 +18,8 @@ span {
   height: 32px;      /* fallback */
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
-  margin-top:0;
-  padding: 30px 60px 30px 60px;
+  margin:0 !important;
+  padding: 15px 30px 15px 30px;
 }
 
 .username {
@@ -31,8 +31,9 @@ img {
 }
 .likesCount {
   color:black;
+  margin: 0 !important;
 }
 .instaContentWrapper {
   background: rgba(254,204,69,0.7);
-  padding:15px 5px 15px 5px;
+  padding:15px;
 }
