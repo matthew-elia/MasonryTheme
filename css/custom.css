@@ -19,7 +19,7 @@ span {
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
   margin-top:0;
-  padding: 15px 30px 15px 30px;
+  padding: 30px 60px 30px 60px;
 }
 
 .username {
@@ -34,5 +34,5 @@ img {
 }
 .instaContentWrapper {
   background: rgba(254,204,69,0.7);
-  padding:15px;
+  padding:15px 5px 15px 5px;
 }
