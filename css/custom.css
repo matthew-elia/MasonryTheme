@@ -1,14 +1,10 @@
 body {
   background: white;
 }
-video {
-  margin-top:33px;
-  padding: 10px;
-  background: white;
-}
 li {
-  background: white;
-  padding:15px !important;
+  background: rgba(254,204,69,0.7);
+  padding:30px !important;
+  text-align: center;
 }
 span {
   display: inline-flex;
@@ -19,12 +15,17 @@ span {
   text-overflow: ellipsis;
   display: -webkit-box;
   line-height: 16px;     /* fallback */
-  max-height: 48px;      /* fallback */
-  -webkit-line-clamp: 3; /* number of lines to show */
+  height: 32px;      /* fallback */
+  -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
   margin-top:0;
+  padding: 15px 30px 15px 30px;
 }
 
 .username {
   color: skyblue;
+}
+img {
+  max-width: 350px;
+  max-height: 350px;
 }
